@@ -25,6 +25,9 @@ public class MemoController {
 		Memo memo = new Memo(memoId, dto.getTitle(), dto.getContents());
 
 		// Inmemory DB에 Memo 저장
+		memoList.put(memoId, memo);
+
+		return new MemoResponseDto();
 	}
 
 
