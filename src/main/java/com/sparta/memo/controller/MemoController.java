@@ -22,6 +22,7 @@ public class MemoController {
 		Long memoId = memoList.isEmpty() ? 1 : Collections.max(memoList.keySet()) + 1;
 
 		// 요청받은 데이터로 Memo 객체 생성
+		Memo memo = new Memo(memoId, dto.getTitle(), dto.getContents());
 
 		// Inmemory DB에 Memo 저장
 	}
